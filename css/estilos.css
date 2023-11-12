@@ -1,0 +1,719 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*font-family: 'Poppins', sans-serif;*/
+.header {
+  position: relative;
+}
+
+/*Estilos para la seccion fixed */
+.seccionfixed {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/*Estilos para el carrito */
+.carrito {
+  background-color: #394867;
+  color: #f1f6f9;
+}
+
+.opciones-carrito {
+  padding: 1em 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.opciones-carrito__gregar {
+  background-color: #5d9c59;
+  padding: 1.5rem 2em;
+}
+
+.opciones-carrito__unit{
+ padding:0PX .5em ;
+}
+
+.opciones-carrito__button{
+ all: unset;
+ cursor: pointer;
+}
+
+/*Estilos para el boton expander menu */
+.menu-container {
+  padding: 1em 15px;
+  background-color: #fefcf3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.menu-container__companyName {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.menu-ellipsis__i {
+  color: #5142c2;
+}
+
+.menu-bars__i {
+  color: black;
+}
+
+/*Estilos para mostrar los elementos mediante el menu para dispositivos*/
+.wrapper-menubars__icon {
+  margin: 0 0.5rem;
+}
+
+.wrapper-menubars,
+.wrapper-socialnetworks {
+  display: inline-flex;
+}
+
+.menu-container__contact {
+  position: absolute;
+  width: 55%;
+  height: 100vh;
+  left: 0;
+  top: 8.5rem;
+  background-color: #fefcf3;
+
+  transform: translateX(-550px);
+  transition: all 0.5s ease;
+}
+
+.show-menu-container__contact {
+  transform: translateX(0);
+  transition: 0.6s ease;
+}
+
+.wrapper-companyinformation__text-icon {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper-companyinformation {
+  padding: 1em 15px;
+}
+
+.wrapper-companyinformation__icon {
+  padding: 0.5rem 0;
+}
+
+.wrapper-socialnetworks {
+  padding: 1em 0 1em 15px;
+  width: 100%;
+}
+
+.icons {
+  margin: 0 0.5rem;
+  color: black;
+}
+
+.icons--car {
+  color: white;
+}
+
+/*Estilos de las listas html*/
+.nav__li {
+  list-style: none;
+}
+
+.nav__li--active {
+  background-color: #7149c6;
+  color: white;
+}
+
+.nav__enlace-texto {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  padding: 15px;
+}
+
+.nav__enlace-texto:hover {
+  background-color: #7149c6;
+  color: white;
+}
+
+/*Estilos para el contenedor pricipal main*/
+.main {
+  padding-top: 5.7rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.section {
+  margin: 2.5em 0;
+}
+
+.container,
+.containerbig {
+  position: relative;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.container--big {
+  height: 600px;
+}
+
+.container--small {
+  margin: 1em 1em;
+}
+
+.container__content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(24, 24, 24, 0.5);
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container__title--big {
+  font-size: 2.2rem;
+}
+
+.container__title--small {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.container__description {
+  margin: 0 2.5em 1em 2.5em;
+  font-weight: 700;
+}
+
+.container__description--big {
+  font-size: 19px;
+}
+
+/*Estilos para el titulo al inicio de cada sección*/
+.title-section {
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+  margin: 0.8em 0;
+}
+
+/*Estilos para la seccion de las categorias*/
+.container__icon--category {
+  border-radius: 50%;
+  border: 4px solid #cccc;
+  background-color: #6046b6;
+  padding: 1rem;
+}
+
+/*Estilos para las tarjetas de productos mas vendidos*/
+.card {
+  border: 1px solid rgba(178, 178, 178, 0.3);
+  box-shadow: 0 0 5px rgba(178, 178, 178, 0.2);
+  text-align: center;
+  font-weight: 300;
+  margin: 1.5em;
+}
+
+.card__news {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.card__news-title {
+  background-color: #8294c4;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__wrapper-image {
+  margin: 2.5em 2em 0 2em;
+}
+
+.card__content {
+  padding: 0.1em 0;
+}
+
+.card__title {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.card__price {
+  color: rgb(60, 64, 72);
+  font-weight: 900;
+}
+
+/*Estilos para los botones de las secciones*/
+.wrapp-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.wrapp-button__link {
+  padding: 1em;
+  margin: 0.5em 2em;
+  width: 14rem;
+}
+
+.wrapp-button__link--text-black {
+  color: black;
+  background-color: #FEC64D;
+  cursor: pointer;
+}
+
+.wrapp-button__link--text-white {
+  color: white;
+  background-color: rgba(83, 145, 101, 0.9);
+}
+
+.wrapp-button__text{
+  all: unset;
+  width: 100%;
+}
+
+/*Estilos para las imagenes*/
+.renderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.renderImage--small {
+  object-fit: contain;
+}
+
+/*Estilos para los enlaces*/
+.enlaces {
+  text-decoration: none;
+  display: block;
+}
+
+/*Estilos para el modal del carrito de compra*/
+.modal{
+  padding:10rem 0 0 0;
+  height: 100vh;
+  display: none;
+  background-color: white;
+}
+
+.showcontenedorCarrito{
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.closeIcon-cart{
+  width: 100%;
+  text-align: end;
+  padding: .5rm;
+  cursor: pointer;
+}
+
+.contenedorCarrito{
+  padding: .5rem;
+}
+
+.section__container-compras{
+  padding-top: 3rem;
+}
+
+.message-cart{
+  min-height: 2rem;
+  text-align: center;
+}
+
+.container-compras{
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-start;
+  margin: 5px;
+}
+
+
+.compra-imagen{
+ padding: 1px;
+ max-width: 5rem;
+}
+
+.compra-infoproducto{
+  flex-basis: 5rem;
+}
+
+.compra-infoproducto__prices{
+  font-weight: 700;
+}
+
+.compra-totalunitario{
+  min-width: 4rem;
+}
+
+.quantity-Products{
+ display: flex;
+ align-items: center;
+ border: 1px solid #ccc;
+ height: 2em;
+ border-radius: 15px;
+ margin: 0 12px;
+}
+
+.quantity-Products__input,.quantity-Products--btn,.eliminar-compra__btn{
+  all: unset;
+  width: 2em;
+  text-align: center;
+ }
+
+ .eliminar-compra__btn{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 1px;
+ }
+
+.quantity-Products--btn{
+ color: black;
+ font-size: 1rem;
+ cursor: pointer;
+ text-align: center;
+}
+
+.eliminar-compra{
+  text-align: center;
+  cursor: pointer;
+}
+
+.renderImage-cart{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container-detalles{
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
+  
+  margin: 1rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.detalles-compras{
+  position: relative;
+}
+
+.detalles-compras__cantidad{
+  position: absolute;
+  right:0;
+}
+
+.detalles-compras:nth-child(3){
+  font-weight: 700;
+}
+
+.detalles-compras__cantidad--black{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.detalles-compras__cantidad--cantidad{
+  font-weight: 600;
+}
+
+.detalles-compras__cantidad--total{
+  font-size: 1.3rem;
+}
+
+.footer{
+   background-color: #394867;
+   color: white;
+   padding: 8rem;
+   text-align: center;
+   font-size: 1rem;
+}
+
+/*Estilos para pantalla de 480px celular gama media*/
+@media screen and (min-width: 480px) {
+
+  /*hacemos flexible el contenedor de las categorias*/
+  .section__category,
+  .section__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    margin: 0 3em;
+  }
+
+  /*modificamos el ancho de las tarjetas*/
+  .container {
+    flex-basis: 260px;
+    height: 260px;
+    flex-grow: 1;
+  }
+
+  .container--big {
+    height: 450px;
+  }
+
+  .container--small {
+    margin: 0.5rem 0;
+  }
+ 
+  /*incrementamos el alto a las tajetas de las seccion de categoria*/
+  .card {
+    margin: 1rem 0;
+    flex-basis: 250px;
+    flex-grow: 1;
+    height: auto;
+  }
+
+  .card__content {
+    padding: 1em 0;
+  }
+  
+  /*cambiamos la dirección a columna*/
+  .wrapp-button {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .wrapp-button__link {
+    padding: 1em 0;
+    width: 14rem;
+  }
+  
+  /*cambiamos la propiedad object-fit: de las imagenes*/
+  .renderImage--small {
+    object-fit: cover;
+  }
+
+  /* Estilos para el modal del carrito de compras */
+  .modal{
+    padding:10rem 1.5rem 0 1.5rem;
+    background-color: rgba(58, 58, 58,0.4);
+  }
+
+  .contenedorCarrito{
+    background-color: white;
+  } 
+}
+
+/*Estilos para pantalla de 768px para tablet*/
+@media screen and (min-width: 768px) {
+
+  /*Reducimos el ancho del menu para dispositivo*/
+  .menu-container__contact {
+    width: 45%;
+  }
+
+  .container--small {
+    margin: 0.5rem .5rem;
+  }
+
+  .container__title--big {
+    font-size: 2.5rem;
+  }
+
+  .container__description {
+    font-size: 1.5rem;
+  }
+
+  .container__description--big {
+    font-size: 1.4rem;
+  }
+
+  /*Estilos para las imagenes*/
+  .card__wrapper-image {
+    min-height: 150px;
+    max-height: 150px;
+    overflow: hidden;
+  }
+
+  /*incrementamos el alto a las tajetas de las seccion de categoria*/
+  .card {
+    margin: 1rem 1rem;
+    flex-basis: 250px;
+    flex-grow: 1;
+    height: auto;
+  }
+
+  .card__price{
+    font-size: 1.5rem;
+  }
+
+  /* Estilos para el modal del carrito de compras */
+  .modal{
+    padding: 12rem 8rem 1rem 8rem;
+  }
+
+  .footer{
+    font-size: 1.5rem;
+  }
+}
+
+/*Estilos para pantalla de 960px para laptops */
+@media screen and (min-width: 960px) {
+
+  /*Estilos para el contenedor pricipal main*/
+  .main {
+    padding-top: 8rem;
+  }
+
+  .menu-container {
+    padding: 0em 20px;
+    gap: 0;
+  }
+
+  .menu-container__contact {
+    position: static;
+    height: 6em;
+    width: auto;
+    transform: none;
+    transition: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .wrapper-menu,
+  .wrapper-companyinformation {
+    display: flex;
+    justify-content: end;
+    width: auto;
+  }
+
+  .nav__ul {
+    display: flex;
+  }
+
+  .wrapper-socialnetworks {
+    padding: 0.4em 0 0.5em 0;
+    width: auto;
+  }
+
+  .wrapper-companyinformation {
+    padding: 0 15px;
+  }
+
+  .wrapper-menubars__icon,
+  .menu-container__icon-ellipsis {
+    display: none;
+  }
+
+  .menu-container__companyName {
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+
+  .container--big {
+    height: 500px;
+  }
+
+  .container--small:hover > .renderImage--small{
+    transition: transform 0.2s ease;
+	  transform:  scale(1.2);
+    transform-origin: center center;
+  }
+
+  .container__icon--category {
+    padding: 1.5rem;
+  }
+
+  .container--small:hover .container__icon--category {
+    background-color:#FEC64D;
+  } 
+
+  /*estilos para la tarjeta de productos mas vendidos*/
+  .section__category{
+    gap: 5px;
+  }
+
+  .section__card{
+    gap: 5px;
+  }
+
+  /*modificamos el ancho de las tarjetas*/
+  .container {
+    flex-basis: 350px;
+    height: 300px;
+    flex-grow: 1;
+  }
+
+  /*incrementamos el alto a las tajetas de las seccion de categoria*/
+  .card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+  
+    flex-basis: 350px;
+    flex-grow: 1;
+  }
+
+  .wrapp-button{
+    display: none;
+  }
+
+  .card:hover .wrapp-button {
+    display: inline-flex;
+    position: absolute;
+    height: 100%;
+    background-color: rgba(67, 66, 66,0.2);
+  }
+
+  .wrapp-button__link--text-black:hover{
+    background-color: #46daad;
+    color: white;
+    transition: all 250ms ease;
+  }
+
+  .nav__li--active {
+    background:none;
+    border-bottom:8px solid #FEC64D;
+    color: black;
+  }
+
+  .nav__li--active:hover {
+    border-bottom:none;
+  }
+
+  .nav__enlace-texto:hover {
+    border-bottom:8px solid #FEC64D;
+    background: none;
+    color: black;
+    transition: 0.2s ease-out;
+  }
+
+  /* Estilos para el modal del carrito */
+  .modal{
+    padding: 12rem 15rem 1rem 15rem;
+  }
+
+  .compra-infoproducto{
+    flex-basis: 8rem;
+  }
+}
+
+@media screen and (min-width:1024){}
